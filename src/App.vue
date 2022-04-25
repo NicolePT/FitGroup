@@ -6,7 +6,7 @@
         <v-card class="pa-4">
           <div class="text-center">
             <v-avatar size="100" color="indigo lighten-4">
-              <v-icon size="40" color="indigo">mdi-account</v-icon>
+              <v-icon size="40" color="indigo">mdi-account</v-icon> //icon of Login
             </v-avatar>
             <h2 class="indigo--text">FitGroup</h2>
           </div>
@@ -25,6 +25,7 @@
                       v-model="password"
                       :rules="passwordRules"
                       :type="passwordShow?'text':'password'"
+                      
                       label="Contraseña"
                       placeholder="Contraseña"
                       prepend-inner-icon="mdi-key"
@@ -32,7 +33,7 @@
                       @click:append="passwordShow = !passwordShow"
                       required
               />
-              <v-switch label="Recuerdame" color="indigo"></v-switch>
+              <v-switch label="Recuérdame" color="indigo"></v-switch>
             </v-card-text>
             <v-card-actions class="justify-center">
               <v-btn :loading="loading" type="submit" color="indigo">
